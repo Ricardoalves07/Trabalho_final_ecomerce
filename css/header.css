@@ -1,0 +1,90 @@
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #333; 
+    color: white;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: var(--header-height);
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    width: 250px;
+}
+
+header nav ul.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+header nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header nav ul.menu li a:hover {
+    background-color: #444; /* Efeito ao passar o mouse */
+    border-radius: 5px;
+}
+
+header .pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o campo de texto e o botão */
+    margin-right: 20px; /* Move toda a barra de pesquisa mais para a esquerda */
+}
+
+header .pesquisa button {
+    background-color: #067eff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: -5px; /* Move o botão mais para a esquerda em relação ao campo de texto */
+}
+
+header .pesquisa input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+header .pesquisa button:hover {
+    background-color: #0056b3;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
