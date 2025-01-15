@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce computer Unilab students</title>
+</head>
+
+<body>
+    <header>
+        <div ><h1 style="font-size: Roboto;">Loja Online de Produtos da Unilab</h1></div>
+       
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="pesquisa">
+            <input type="text" placeholder="Buscar produtos..." id="campo-pesquisa">
+            <button type="button" onclick="buscar()">Buscar</button>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <h2>Produtos</h2>
+        <div class="container-produtos">
+           
+            <div class="produto">
+                <img src="https://media.istockphoto.com/id/482748813/pt/foto/vintage-velho-computador-arredondado-monitor-teclado-e-relan%C3%A7amento-dos-anos-80-fundo-branco.jpg?s=612x612&w=0&k=20&c=9-c6e7CZT87EUunBEtVEq0lignErekR0Eoz1y6-T6SA=" alt="Computador Antigo">
+                <p><strong>Computador Antigo</strong></p>
+                <p>R$ 199,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+           
+            <div class="produto">
+                <img src="https://media.istockphoto.com/id/496859509/pt/foto/monitor-de-computador.jpg?s=612x612&w=0&k=20&c=Wc3fzXa5d_b-QWpjwz_c8DzrWHICId0_B3kOOUFpTLk=" alt="Televisão Retrô" id="157">
+                <p><strong>Monitor Retrô</strong></p>
+                <p>R$ 299,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            
+            <div class="produto">
+                <img src="https://media.istockphoto.com/id/471068599/pt/foto/vintage-de-m%C3%A1quina-de-escrever.jpg?s=612x612&w=0&k=20&c=UzBdhQ8abO7dk8FNd2dAdG9k3Vk_Qa1sWuALeFhbXng=" alt="Máquina de Escrever">
+                <p><strong>Máquina de Escrever</strong></p>
+                <p>R$ 159,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            
+            <div class="produto">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/12/11/Vintage-Camera-Graphic-51649209-1.png" alt="Câmera Vintage">
+                <p><strong>Câmera Vintage</strong></p>
+                <p>R$ 249,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <section class="categoria">
+            <h2>Computadores</h2>
+
+            <div class="container-produtos">
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxN3b8qxJdDlxNFM6DhV9DSmAHOk2tEJwTg&s" alt="Produto 1">
+                    <p><strong>Computador Gamer</strong></p>
+                    <p>R$ 1909,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <!-- Mais produtos -->
+            </div>
+        </section>
+        
+        <section class="categoria">
+            <h2>Eletrônicos</h2>
+            <div class="container-produtos">
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaWjp9l6huTeWkF-ZbrDpfluWfh8lBZcF3A&s">
+                    <p><strong>Capacitores</strong></p>
+                    <p>R$ 0,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIEGgxZfbxHL5gU_TGdS4Te5cmviXEq-s3aw&s">
+                    <p><strong>Indutor</strong></p>
+                    <p>R$ 4,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Periféricos</h2>
+            <div clas="container-produtos">
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMNFSMAnnQyZGV-FWH3KrzpirF1ffCOrsIxA&s">
+                    <p><strong>Teclado</strong></p>
+                    <p>R$ 43,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+            </div>  
+
+        </section>
+
+        <section class="categoria">
+            <h2>Peças de hardware</h2>
+            <div clas="container-produtos">
+                <div class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_C80lNVzMJZKZZsmum7Cjqy4P0Yjiy70Lg&s">
+                    <p><strong>RAM</strong></p>
+                    <p>R$ 4,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+            </div>  
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Loja Online de Computação da Unilab</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
