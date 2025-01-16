@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/form.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Loja Online Unilab</title>
+    <title>Recuperação de Senha - Loja Online Unilab</title>
 </head>
 <body>
     <header>
@@ -21,26 +21,16 @@
         </nav>
     </header>
     <main>
-        <section class="login-container">
-            <h2>Login</h2>
+        <section class="forget-password-container">
+            <h2>Recuperação de Senha</h2>
             
-            <form id="login-form">
-                <input type="text" id="login" name="login" placeholder="Digite seu usuário" required>
-                
-                <div class="form-group">
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                    <div class="help-text">
-                        <a href="recuperar_senha.html">Esqueceu sua senha?</a>
-                    </div>
-                </div>
+            <form id="forget-password-form">
+                <input type="password" id="senha1" name="senha1" placeholder="Digite sua nova senha" required>
+
+                <input type="password" id="senha2" name="senha2" placeholder="Confirme a senha" required>              
     
-                <button type="submit" class="btn-login">Entrar</button>
+                <button type="submit" class="btn-confirm">Confirmar</button>
             </form>
-    
-            <div class="cadastro-link">
-                <h3>Ainda não possui cadastro?</h3>
-                <a href="cadastro.html" class="btn-cadastro">Criar Conta</a>
-            </div>
         </section>
     </main>
     

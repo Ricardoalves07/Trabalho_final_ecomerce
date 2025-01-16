@@ -1,0 +1,71 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    width: 60vw;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.help-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+/* Outros estilos mantêm o mesmo comportamento */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* .btn-cadastrar, .btn-login, .btn-confirm  */
+form button[type='submit'] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    font-weight: lighter;
+    display: inline;
+}

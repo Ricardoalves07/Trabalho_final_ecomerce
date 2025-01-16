@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/form.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Loja Online Unilab</title>
@@ -23,33 +24,16 @@
         <section class="cadastro-container">
             <h2>Cadastro de Novo Usuário</h2>
             <form id="cadastro-form">
-                <div class="form-group">
-                    <label for="nome">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
+                    
                     <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="endereco">Endereço:</label>
+                    
                     <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="login">Login:</label>
+                    
                     <input type="text" id="login" name="login" placeholder="Crie um login" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="senha">Senha:</label>
+                    
                     <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="tipo-acesso">Tipo de Acesso:</label>
+                    
                     <select id="tipo-acesso" name="tipo-acesso" required>
                         <option value="" disabled selected>Selecione o tipo de acesso</option>
                         <option value="usuario">Usuário Normal</option>
@@ -59,6 +43,11 @@
 
                 <button type="submit" class="btn-cadastrar">Cadastrar</button>
             </form>
+
+            <div class="cadastro-link">
+                <h3>Já tem uma conta?</h3>
+                <a href="login.html" class="btn-login">Entrar</a>
+            </div>
         </section>
     </main>
 
@@ -66,9 +55,9 @@
         <div class="footer-content">
             <p>© 2025 Loja Online de Computação da Unilab</p>
             <ul>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="politica_de_privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termo_de_uso.html">Termos de Uso</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </footer>

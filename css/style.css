@@ -3,6 +3,11 @@
     --footer-height: 11vh;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,238 +23,19 @@ body {
 main {
     margin-top: var(--header-height); /* Compensa a altura do header fixo */
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-}
 
-.container-produtos {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 20px; 
-    padding: 20px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #333;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-.produto {
-    width: 250px; 
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    gap: 30px;
 }
 
-.produto img {
-    width: 100%; /* Faz a imagem se ajustar ao container */
-    border-radius: 5px;
-}
-
-.produto button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.produto button:hover {
-    background-color: #218838;
-}
-
-.menu li {
-    margin: 0;
-}
-
-.menu li a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.menu li a:hover {
-    background: #555;
-}
-.produto img {
-    width: 120px;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block; 
-    margin-right: 20px; 
+main h2 {
+    padding-top: 30px;
 }
 
 h1 {
     font: Roboto;
-    text-align: center;
     color: rgb(252, 252, 252);
-}
-
-.pesquisa {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-.pesquisa input {
-    width: 60%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
-}
-
-.pesquisa button {
-    padding: 10px;
-    border: none;
-    background: #007bff;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-.pesquisa button:hover {
-    background: #0056b3;
-}
-
-.categoria {
-    margin: 20px 0;
-    padding: 20px;
-    border-top: 2px solid #ddd;
-}
-.categoria h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.help-text {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.help-text a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.help-text a:hover {
-    text-decoration: underline;
-}
-
-.form-group {
-    margin-bottom: 20px; /* Ajuste para criar mais espaço */
-}
-
-/* Outros estilos mantêm o mesmo comportamento */
-input, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-input:focus, select:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.btn-cadastrar {
-    width: 100%;
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-cadastrar:hover {
-    background-color: #0056b3;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.carrinho-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-table th {
-    background-color: #007bff;
-    color: white;
-}
-
-.carrinho-total {
-    text-align: right;
-    font-size: 18px;
-}
-
-.carrinho-total p {
-    margin-bottom: 20px;
-}
-
-.btn-finalizar {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-cancelar:hover {
-    background-color: #d92117;
-}
-
-.btn-cancelar {
-    background-color: #d92117;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-cancelar:hover {
-    background-color: #d92117;
 }

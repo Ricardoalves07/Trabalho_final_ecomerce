@@ -6,7 +6,6 @@ header {
     background-color: #333; 
     color: white;
     z-index: 1000;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 0px 20px;
 
@@ -24,67 +23,60 @@ header h1 {
 }
 
 header nav ul.menu {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
     gap: 15px;
+    
+    background: #333;
+    list-style: none;
+}
+
+header nav ul.menu li {
+    display: inline-block;
 }
 
 header nav ul.menu li a {
-    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
     color: white;
-    font-weight: bold;
-    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 header nav ul.menu li a:hover {
-    background-color: #444; /* Efeito ao passar o mouse */
+    background: #555;
     border-radius: 5px;
 }
 
-header .pesquisa {
+header div.pesquisa {
     display: flex;
-    align-items: center;
-    gap: 10px; /* Espaçamento entre o campo de texto e o botão */
-    margin-right: 20px; /* Move toda a barra de pesquisa mais para a esquerda */
+}
+
+header div.pesquisa input {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+header div.pesquisa button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+header div.pesquisa button:hover {
+    background: #0056b3;
 }
 
 header .pesquisa button {
     background-color: #067eff;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px 0 0 5px;
     padding: 15px 20px;
     cursor: pointer;
-    margin-left: -5px; /* Move o botão mais para a esquerda em relação ao campo de texto */
-}
-
-header .pesquisa input {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-
-header .pesquisa button:hover {
-    background-color: #0056b3;
-}
-
-header .menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-}
-
-header .menu li {
-    margin: 0 15px;
-}
-
-header .menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
