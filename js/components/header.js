@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header>
-            <img src="img/logo.png" alt="ECStore logo">
+            <img src="../img/logo.png" alt="ECStore logo">
         
             <nav>
                 <ul class="menu">
