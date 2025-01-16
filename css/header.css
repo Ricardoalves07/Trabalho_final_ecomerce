@@ -15,11 +15,11 @@ header {
     height: var(--header-height);
 }
 
-header h1 {
+header img {
     font-size: 24px;
     font-family: Roboto, sans-serif;
     margin: 0;
-    width: 250px;
+    max-height: calc(var(--header-height) - 1vh);
 }
 
 header nav ul.menu {
@@ -48,35 +48,31 @@ header nav ul.menu li a:hover {
     border-radius: 5px;
 }
 
-header div.pesquisa {
+header form#pesquisa {
     display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: normal;
+    width: auto;
 }
 
-header div.pesquisa input {
+header form#pesquisa input {
     width: 100%;
     border-radius: 5px 0 0 5px;
     padding: 5px;
     border: 1px solid #ddd;
 }
 
-header div.pesquisa button {
+header form#pesquisa button {
     padding: 10px;
     border: none;
-    background: #007bff;
-    color: #fff;
     border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-header div.pesquisa button:hover {
-    background: #0056b3;
-}
-
-header .pesquisa button {
-    background-color: #067eff;
+    
     color: white;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    padding: 15px 20px;
+    background-color: #067eff;
     cursor: pointer;
+}
+
+header form#pesquisa button:hover {
+    background: #0056b3;
 }

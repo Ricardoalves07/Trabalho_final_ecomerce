@@ -40,7 +40,6 @@ input, select {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
-    text-align: center;
 }
 
 input:focus, select:focus {
@@ -50,7 +49,7 @@ input:focus, select:focus {
 }
 
 /* .btn-cadastrar, .btn-login, .btn-confirm  */
-form button[type='submit'] {
+form input[type='submit'] {
     width: 100%;
     background-color: #007bff;
     color: white;
