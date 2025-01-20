@@ -25,16 +25,15 @@
             <form id="login-form">
                 <input type="text" id="login" name="login" placeholder="Digite seu usuário" required>
                 
-                <div class="form-group">
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                    <div class="help-text">
-                        <a href="recuperar_senha.html">Esqueceu sua senha?</a>
-                    </div>
-                </div>
-    
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                
                 <input type="submit" class="btn-login" value="Entrar">
             </form>
-    
+            
+            <div class="help-text">
+                <a href="recuperar_senha.html">Esqueceu sua senha?</a>
+            </div>
+            
             <div class="cadastro-link">
                 <h3>Ainda não possui cadastro?</h3>
                 <a href="cadastro.html" class="btn-cadastro">Criar Conta</a>
@@ -44,6 +43,6 @@
     
     <footer-component></footer-component>
 
-    <script src="scripts.js"></script>
+    <script src="../js/validacao.js"></script>
 </body>
 </html>
